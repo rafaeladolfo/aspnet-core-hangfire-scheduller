@@ -18,7 +18,7 @@ namespace scheduller.Controllers
             var myJob = new SimpleJob();
             RecurringJob.AddOrUpdate(() => myJob.RunJob(), Cron.Minutely());
 
-            return "Just added a simple job."; //simple simples bem simples
+            return "Just added a simple job.";
         }
     }
 }

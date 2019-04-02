@@ -18,7 +18,7 @@ namespace scheduller.Controllers
             var myJob = new ComplexJob();
             RecurringJob.AddOrUpdate(() => myJob.RunJob(), Cron.Minutely());
 
-            return "Just added a very complex job."; //salva em mongo
+            return "Just added a very complex job.";
         }
     }
 }
