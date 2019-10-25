@@ -19,7 +19,7 @@ namespace scheduller.data.Services.Implementation
             foreach (SearchResult result in results)
             {
                 DirectoryEntry de = result.GetDirectoryEntry();
-                if (IsActive(de))
+                if (!IsActive(de))
                     DisableDependantAccounts(de.Username);
 
             }
